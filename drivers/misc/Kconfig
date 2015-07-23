@@ -6,6 +6,12 @@ menu "Misc devices"
 
 source "drivers/misc/haptic/Kconfig"
 
+config  LCD_SSD2828
+	tristate
+	default y
+	help
+	  ssd2828 for mipi interface
+
 config SENSORS_LIS3LV02D
 	tristate
 	depends on INPUT

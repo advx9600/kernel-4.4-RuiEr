@@ -2,6 +2,7 @@
 # Makefile for misc devices that really don't fit anywhere else.
 #
 
+obj-$(CONFIG_LCD_SSD2828)	+= ssd2828/pin_ssd2828.o
 obj-$(CONFIG_HAPTIC_DRV260X)	+= haptic/
 obj-$(CONFIG_IBM_ASM)		+= ibmasm/
 obj-$(CONFIG_AD525X_DPOT)	+= ad525x_dpot.o
